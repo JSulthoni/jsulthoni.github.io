@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { HiOutlineMail } from 'react-icons/hi'
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa6";
 import { Link } from 'react-scroll'
@@ -99,13 +99,13 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <div className='w-5 h-5 flex items-center' onClick={toggle}>
+                    <div className='w-5 h-5 flex items-center cursor-pointer' onClick={toggle}>
                         { mode === 'dark' ? <FaMoon/> : <FaSun /> }
                     </div>
                 </li>
             </ul>
             {/* hamburger */}
-            <div className='md:hidden z-10 flex gap-2 align-middle'>
+            <div className='md:hidden z-10 flex gap-4 align-middle cursor-pointer'>
                 <div className='text-xl' onClick={handleClick}>
                     {!openMenu ? <FaBars /> : <FaTimes />}
                 </div>
