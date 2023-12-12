@@ -46,7 +46,6 @@ const Navbar = () => {
             <div className='flex justify-between items-center left-0 ml-[-170px] hover:ml-[0px] duration-300 cursor-pointer' onClick={highfive}>
                 <div className='w-[170px]'>
                     <p className='text-sky-50 my-1'>Give me a high-five!</p>
-                    <p className='text-sky-50 my-1 text-sm opacity-50'>High-five received: {counter}</p>
                 </div>
                 <PiHandWavingDuotone className='w-[200px] h-full active:scale-95 duration-100 ml-[-10px]' style={{width: '50px'}}/>
             </div>
@@ -169,7 +168,7 @@ const Navbar = () => {
             </ul>
 
             {/* social icons */}
-            <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            <div className='hidden sm:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-600 dark:bg-sky-900'>
                         <a className='flex justify-between items-center w-full text-sky-50' rel="noreferrer" href='https://www.linkedin.com/in/javiersulthoni/' target="_blank">LinkedIn <FaLinkedin size={30}/></a></li>
