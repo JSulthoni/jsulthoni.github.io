@@ -56,6 +56,7 @@ function App() {
 			<Skills />
 			<Project />
 			<Contact />
+			<p className='text-zinc-950 dark:text-sky-50 bg-slate-50 dark:bg-slate-950 w-full text-xs p-2 m-0 hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-700'>2023. © Javier Sulthoni</p>
 		</div>
 	);
 }

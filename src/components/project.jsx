@@ -9,14 +9,14 @@ const projectArray = [
         url: 'https://svane.onrender.com/',
         code: 'https://github.com/JSulthoni/SVANE-frontend',
         image: SVANEFRONTEND,
-        desc: 'SVANE is my first fullstack project initially developed to create an online shop with responsive UI. SVANE use React for frontend library, Redux for state manager, and SCSS for styling.'
+        desc: 'SVANE is my solo fullstack project initially developed to create an online shop with responsive UI. SVANE use React for frontend library, Redux for state manager, and SCSS for styling.'
     },
     {
         name: 'SVANE SERVER',
         url: 'https://bndlr.cyclic.app/',
         code: 'https://github.com/JSulthoni/SVANE-backend',
         image: SVANEBACKEND,
-        desc: 'SVANE SERVER is a fast backend server built by using NodeJS, Express, Mongoose, and MongoDB. It was built to serve as the backend for SVANE online shop.'
+        desc: 'SVANE SERVER is a fast backend server built using NodeJS, Express, Mongoose, and MongoDB. It was built to serve as the backend for SVANE online shop.'
     }
 ]
 

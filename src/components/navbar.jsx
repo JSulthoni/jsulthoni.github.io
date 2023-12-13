@@ -105,16 +105,16 @@ const Navbar = () => {
             </ul>
             {/* hamburger */}
             <div className='md:hidden z-10 flex gap-4 align-middle cursor-pointer'>
-                <div className='text-xl' onClick={handleClick}>
-                    {!openMenu ? <FaBars /> : <FaTimes />}
-                </div>
                 <div className='text-xl' onClick={toggle}>
                         { mode === 'dark' ? <FaMoon/> : <FaSun /> }
+                </div>
+                <div className='text-xl' onClick={handleClick}>
+                    {!openMenu ? <FaBars /> : <FaTimes />}
                 </div>
             </div>
 
             {/* mobile menu */}
-            <ul className={!openMenu ? 'hidden invisible h-0 w-0 opacity-0 translate-y-10 overflow-y-hidden transition-all duration-300 ease' : 'visible absolute opacity-1 translate-y-0 transition-all duration-300 ease top-0 left-0 w-full h-screen bg-sky-600 dark:bg-sky-950 flex flex-col justify-center items-center'}>
+            <ul className={!openMenu ? 'invisible h-0 opacity-0 absolute translate-y-10 overflow-hidden' : 'visible absolute opacity-1 translate-y-0 transition-all duration-300 ease top-0 left-0 w-full h-screen bg-sky-600 dark:bg-sky-950 flex flex-col justify-center items-center origin-top-right'}>
                 <li className='py-6 text-2xl'>
                     <Link 
                         onClick={handleClick}
