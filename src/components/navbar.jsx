@@ -168,7 +168,7 @@ const Navbar = () => {
             </ul>
 
             {/* social icons */}
-            <div className='hidden sm:flex fixed flex-col top-[35%] left-0'>
+            <div className='hidden sm:flex fixed flex-col top-[75%] lg:top-[35%] left-0 transition-all duration-300 ease'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-600 dark:bg-sky-900'>
                         <a className='flex justify-between items-center w-full text-sky-50' rel="noreferrer" href='https://www.linkedin.com/in/javiersulthoni/' target="_blank">LinkedIn <FaLinkedin size={30}/></a></li>
