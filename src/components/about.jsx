@@ -17,7 +17,7 @@ const About = () => {
                 <div className='max-w-[1000px] w-full px-4 grid md:grid-cols-2 gap-4 sm:gap-8 text-zinc-950 dark:text-sky-50'>
                     <div>
                         <p className='md:text-right'>
-                        Since September 2023 I taught myself to be a web developer. My focus is on implementing practices for quick and powerful web applications. I am dedicated to continuous learning and striving for progress.</p>
+                        Since September 2023 I taught myself to be a web developer. My focus is on implementing practices for quick and secure web applications. I am dedicated to continuous learning and striving for progress.</p>
                     </div>
                     <div className='text-4xl font-bold my-1 text-zinc-950 dark:text-sky-50'>
                         <p>Please take a look around!</p>

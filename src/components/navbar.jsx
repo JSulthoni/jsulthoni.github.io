@@ -7,6 +7,7 @@ import { FaSun } from "react-icons/fa6";
 import { Link } from 'react-scroll'
 import { PiHandWavingDuotone } from "react-icons/pi";
 import { ModeContext } from '../context/modeContext';
+import CV from '../assets/CV_Javier-Nauvel-Sulthoni.pdf'
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -177,7 +178,7 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-600 dark:bg-sky-900'>
                         <a className='flex justify-between items-center w-full text-sky-50' rel="noreferrer" href="mailto:sulthonijavier@gmail.com" target="_blank">Email <HiOutlineMail size={30}/></a></li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-600 dark:bg-sky-900'>
-                        <a className='flex justify-between items-center w-full text-sky-50' rel="noreferrer" href='/'>Resume <BsFillPersonLinesFill size={30}/></a></li>
+                        <a className='flex justify-between items-center w-full text-sky-50' rel="noreferrer" href={CV} target="_blank">Resume <BsFillPersonLinesFill size={30}/></a></li>
                 </ul>
             </div>
         </div>
