@@ -13,10 +13,10 @@ const projectArray = [
     },
     {
         name: 'SVANE SERVER',
-        url: 'https://bndlr.cyclic.app/',
+        url: '',
         code: 'https://github.com/JSulthoni/SVANE-backend',
         image: SVANEBACKEND,
-        desc: 'SVANE SERVER is a fast backend server built using NodeJS, Express, Mongoose, and MongoDB. It was built to serve as the backend for SVANE online shop.'
+        desc: 'SVANE SERVER is a fast and secure backend server built using NodeJS, Express, Mongoose, and MongoDB. It was built to serve as the backend for SVANE online shop.'
     }
 ]
 
@@ -55,9 +55,11 @@ const Project = () => {
                                 {project.name}
                             </h3>
                             <div className='pt-8 text-center text-zinc-950 dark:text-sky-50 font-bold'>
+                                {project.url && 
                                 <a href={project.url} target='_blank' rel='noreferrer'>
                                     <button className='text-center px-4 py-3 m-2 bg-sky-400 text-lg'>Demo</button>
                                 </a>
+                                }
                                 <a href={project.code} target='_blank' rel='noreferrer'>
                                     <button className='text-center px-4 py-3 m-2 bg-sky-400 first:text-lg'>Code</button>
                                 </a>

@@ -28,9 +28,11 @@ const Modal = ({data, setModal}) => {
                     {data?.desc}
                 </p>
                 <div className='text-center text-sky-50 font-bold'>
+                    {data?.url &&
                     <a href={data?.url} target='_blank' rel='noreferrer'>
                         <button className='text-center px-4 py-3 mx-2 bg-sky-400 text-lg'>Demo</button>
                     </a>
+                    }
                     <a href={data?.code} target='_blank' rel='noreferrer'>
                         <button className='text-center px-4 py-3 mx-2 bg-sky-400 first:text-lg'>Code</button>
                     </a>
