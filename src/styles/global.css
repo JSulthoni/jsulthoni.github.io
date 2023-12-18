@@ -36,7 +36,7 @@
     filter: blur(25px);
     opacity: 0.5;
     transform: translateX(-25%);
-    transition: all 750ms;
+    transition: all 250ms;
 }
 
 .__show {
@@ -53,12 +53,12 @@
     transform: translateX(-25%);
     visibility: hidden;
     opacity: 0;
-    transition: all 250ms ease;
+    transition: all 250ms;
 }
 
 .__modalopen {
     transform: translateX(0%);
     visibility: visible;
     opacity: 1;
-    transition: all 750ms ease;
+    transition: all 1000ms;
 }

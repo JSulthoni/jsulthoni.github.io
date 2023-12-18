@@ -9,7 +9,7 @@ const projectArray = [
         url: 'https://svane.onrender.com/',
         code: 'https://github.com/JSulthoni/SVANE-frontend',
         image: SVANEFRONTEND,
-        desc: 'SVANE is my solo fullstack project initially developed to create an online shop with responsive UI. SVANE use React for frontend library, Redux for state manager, and SCSS for styling.'
+        desc: 'SVANE is a fast and responsive online shop with 100 performance score (Unlighthouse). SVANE use React for frontend library, Redux for state manager, and SCSS for styling.'
     },
     {
         name: 'SVANE SERVER',
@@ -31,7 +31,7 @@ const Project = () => {
 
 
     return (
-        <section name='project' className='relative w-full h-screen text-zinc-950 dark:text-sky-50 bg-slate-50 dark:bg-slate-950 border-b border-slate-800 grid items-center transition-all duration-700'>
+        <section name='project' className='relative w-full h-screen text-zinc-950 dark:text-sky-50 bg-slate-50 dark:bg-slate-950 border-b border-slate-800 grid items-center transition-all duration-100 md:duration-700'>
             
             {/* Container */}
             <div className='__hide relative max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full'>
@@ -71,7 +71,7 @@ const Project = () => {
             </div>
             <div 
                 onClick={() => setModal()} 
-                className={`${openModal ? '__modalopen' : '__modalclose'} fixed mx-auto h-screen inset-0 md:p-10 md:w-auto dark:bg-slate-900 dark:bg-opacity-75 bg-sky-900 bg-opacity-75`}>
+                className={`${openModal ? '__modalopen' : '__modalclose'} fixed z-10 mx-auto h-screen inset-0 md:p-10 md:w-auto dark:bg-slate-900 dark:bg-opacity-75 bg-sky-900 bg-opacity-75`}>
             <Modal data={modalData} setModal={setModal}/>
             </div>
         </section>

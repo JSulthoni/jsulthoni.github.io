@@ -12,19 +12,11 @@ import CV from '../assets/CV_Javier-Nauvel-Sulthoni.pdf'
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const handleClick = () => setOpenMenu(!openMenu);
-
     const { mode, toggle } = useContext(ModeContext);
 
-    const [counter, setcounter] = useState(0)
 
     function highfive() {
-        const slap = localStorage.getItem('slap')
-        if (slap) {
-            alert('Already high-fived. Thank you!')
-        } else if (!slap) {
-            setcounter(prev => prev + 1)
-        }
-        localStorage.setItem('slap', true)
+        alert('High-fived. Thank you!')
     };
 
     // Disable scroll event if openMenu is truthy
@@ -32,21 +24,24 @@ const Navbar = () => {
         const preventDefaultHandler = (event) => event.preventDefault();
         
         if (openMenu) {
-            window.addEventListener('wheel', preventDefaultHandler, { passive: false })
+            window.addEventListener('wheel', preventDefaultHandler, { passive: false });
+            window.addEventListener('touchmove', preventDefaultHandler, { passive: false });
         } else {
             window.removeEventListener('wheel', preventDefaultHandler);
+            window.removeEventListener('touchmove', preventDefaultHandler);
         }
 
         return () => {
             window.removeEventListener('wheel', preventDefaultHandler);
+            window.removeEventListener('touchmove', preventDefaultHandler);
         }
     }, [openMenu])
 
     return (
         <div className='fixed z-10 w-full h-[60px] flex justify-between items-center px-4 bg-sky-600 dark:bg-sky-900 text-sky-50'>
-            <div className='flex justify-between items-center left-0 ml-[-170px] hover:ml-[0px] duration-300 cursor-pointer' onClick={highfive}>
+            <div className='flex justify-between items-center left-0 ml-[-170px] hover:ml-[0px] duration-300 cursor-pointer'>
                 <div className='w-[170px]'>
-                    <p className='text-sky-50 my-1'>Give me a high-five!</p>
+                    <p  onClick={highfive} className='text-sky-50 my-1'>Give me a high-five!</p>
                 </div>
                 <PiHandWavingDuotone className='w-[200px] h-full active:scale-95 duration-100 ml-[-10px]' style={{width: '50px'}}/>
             </div>

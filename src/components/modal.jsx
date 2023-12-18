@@ -2,21 +2,23 @@ import React, { useEffect } from 'react';
 import { CgCloseR } from "react-icons/cg";
 
 const Modal = ({data, setModal}) => {
-
-    const isData = Boolean(data)
-
+        
     // Disable scroll event if modal is opened
+    const isData = Boolean(data)
     useEffect(() => {
         const preventDefaultHandler = (event) => event.preventDefault();
         
         if (isData) {
-            window.addEventListener('wheel', preventDefaultHandler, { passive: false })
+            window.addEventListener('wheel', preventDefaultHandler, { passive: false });
+            window.addEventListener('touchmove', preventDefaultHandler, { passive: false });
         } else {
             window.removeEventListener('wheel', preventDefaultHandler);
+            window.removeEventListener('touchmove', preventDefaultHandler);
         }
 
         return () => {
             window.removeEventListener('wheel', preventDefaultHandler);
+            window.removeEventListener('touchmove', preventDefaultHandler);
         }
     }, [isData])
 
