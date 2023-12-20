@@ -34,7 +34,7 @@ const Project = () => {
         <section name='project' className='relative w-full h-screen text-zinc-950 dark:text-sky-50 bg-slate-50 dark:bg-slate-950 border-b border-slate-800 grid items-center transition-all duration-700'>
             
             {/* Container */}
-            <div className='__hide relative max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full'>
+            <div className='__hide relative max-w-[1000px] mx-auto px-4 md:pl-20 lg:pl-4 flex flex-col justify-center w-full'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-sky-400 text-zinc-950 dark:text-sky-50'>Projects</p>
                     <p className='py-4 text-zinc-950 dark:text-sky-50'>// Click on pictures for more details!</p>
