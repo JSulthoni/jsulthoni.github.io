@@ -6,7 +6,7 @@ import CV from '../assets/CV_Javier-Nauvel-Sulthoni.pdf'
 
 const Contact = () => {
     return (
-        <section name='contact' className='w-full h-screen grid items-center bg-slate-50 dark:bg-slate-950 p-4 border-b border-slate-800 transition-all duration-100 md:duration-700'>
+        <section name='contact' className='w-full h-screen grid items-center bg-slate-50 dark:bg-slate-950 p-4 border-b border-slate-800 transition-all duration-700'>
 
             {/* Buttons */}
             <div className='__hide flex flex-col items-center mx-auto max-w-[1000px] w-full'>

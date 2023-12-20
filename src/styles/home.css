@@ -1,0 +1,34 @@
+.__image {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-blend-mode: multiply;
+}
+
+.__image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url('../assets/photo.png');
+    background-size: 50%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 1024px) {
+    .__image::after {
+        transform: translateX(40%);
+        background-size: 80%;
+        background-position: bottom right;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .__image::after {
+        transform: translateX(50%);
+        background-size: 100%;
+        background-position: bottom right;
+    }
+}

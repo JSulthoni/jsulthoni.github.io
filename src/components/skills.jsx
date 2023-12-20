@@ -22,7 +22,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <section name='skills' className='w-full h-screen bg-slate-50 dark:bg-slate-950 border-b border-slate-800 grid items-center transition-all duration-100 md:duration-700'>
+        <section name='skills' className='w-full h-screen bg-slate-50 dark:bg-slate-950 border-b border-slate-800 grid items-center transition-all duration-700'>
             
             {/* Container */}
             <div className='__hide max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full'>

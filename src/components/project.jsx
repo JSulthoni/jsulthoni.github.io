@@ -31,7 +31,7 @@ const Project = () => {
 
 
     return (
-        <section name='project' className='relative w-full h-screen text-zinc-950 dark:text-sky-50 bg-slate-50 dark:bg-slate-950 border-b border-slate-800 grid items-center transition-all duration-100 md:duration-700'>
+        <section name='project' className='relative w-full h-screen text-zinc-950 dark:text-sky-50 bg-slate-50 dark:bg-slate-950 border-b border-slate-800 grid items-center transition-all duration-700'>
             
             {/* Container */}
             <div className='__hide relative max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full'>

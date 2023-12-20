@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section name='about' className=' w-full h-screen bg-slate-50 dark:bg-slate-950 text-zinc-950 dark:text-sky-50 border-b border-slate-800 grid items-center transition-all duration-100 md:duration-700'>
+        <section name='about' className=' w-full h-screen bg-slate-50 dark:bg-slate-950 text-zinc-950 dark:text-sky-50 border-b border-slate-800 grid items-center transition-all duration-700'>
             <div className='__hide flex flex-col justify-center items-center w-full'>
 
                 {/* Left Text */}
