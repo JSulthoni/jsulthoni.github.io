@@ -10,7 +10,7 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-image: url('../assets/photo.png');
+    background-image: url('../assets/photo.webp');
     background-size: 50%;
     background-position: bottom right;
     background-repeat: no-repeat;

@@ -35,7 +35,7 @@ const Skills = () => {
                 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-zinc-950 dark:text-sky-50 py-8'>
                     {skills.map((skill, index) => (
                     <div key={index} className=' hover:scale-110 duration-300'>
-                        <img className='w-20 mx-auto' src={skill[1]} alt={skill[0].toLowerCase()}/>
+                        <img className='w-20 mx-auto' src={skill[1]} loading='lazy' alt={skill[0].toLowerCase()}/>
                         <p className='my-4'>{skill[0]}</p> 
                     </div>
                     ))}

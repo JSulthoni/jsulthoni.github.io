@@ -47,17 +47,16 @@
 }
 
 .__modalclose {
-    width: 0;
     height: 0;
     overflow: hidden;
-    transform: translateX(-25%);
+    transform: translateY(-25%);
     visibility: hidden;
     opacity: 0;
     transition: all 250ms;
 }
 
 .__modalopen {
-    transform: translateX(0%);
+    transform: translateY(0%);
     visibility: visible;
     opacity: 1;
     transition: all 250ms;

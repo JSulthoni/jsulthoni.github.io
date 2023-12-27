@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SVANEFRONTEND from '../assets/projects/SVANEFRONTEND.png'
-import SVANEBACKEND from '../assets/projects/SVANEBACKEND.png'
+import SVANEFRONTEND from '../assets/projects/SVANEFRONTEND.webp'
+import SVANEBACKEND from '../assets/projects/SVANEBACKEND.webp'
 import Modal from './modal';
 
 const projectArray = [
@@ -9,14 +9,14 @@ const projectArray = [
         url: 'https://svane.onrender.com/',
         code: 'https://github.com/JSulthoni/SVANE-frontend',
         image: SVANEFRONTEND,
-        desc: 'SVANE is a fast and responsive online shop with 100 performance score (Unlighthouse). SVANE use React for frontend library, Redux for state manager, and SCSS for styling.'
+        desc: 'SVANE is a fast and responsive web application with > 90 SEO Score. SVANE use React for frontend library, Redux for state manager, and SCSS for styling.'
     },
     {
         name: 'SVANE SERVER',
         url: '',
         code: 'https://github.com/JSulthoni/SVANE-backend',
         image: SVANEBACKEND,
-        desc: 'SVANE SERVER is a fast and secure backend server built using NodeJS, Express, Mongoose, and MongoDB. It was built to serve as the backend for SVANE online shop.'
+        desc: 'SVANE SERVER is a fast and secure backend server built using NodeJS, Express, Mongoose, and MongoDB. SVANE SERVER was built as backend for SVANE online shop.'
     }
 ]
 
@@ -71,7 +71,7 @@ const Project = () => {
             </div>
             <div 
                 onClick={() => setModal()} 
-                className={`${openModal ? '__modalopen' : '__modalclose'} fixed z-10 mx-auto h-screen inset-0 md:p-10 md:w-auto dark:bg-slate-900 dark:bg-opacity-75 bg-sky-900 bg-opacity-75`}>
+                className={`${openModal ? '__modalopen' : '__modalclose'} fixed z-10 flex justify-center align-middle mx-auto h-screen inset-0 md:p-10 w-full dark:bg-slate-900 dark:bg-opacity-75 bg-sky-900 bg-opacity-75`}>
             <Modal data={modalData} setModal={setModal}/>
             </div>
         </section>
