@@ -20,7 +20,7 @@ const About = () => {
                         Since September 2023 I taught myself to be a Full Stack Developer. My focus is on implementing responsive and secure web applications. I am dedicated to continuous learning and striving for progress.</p>
                     </div>
                     <div className='text-4xl font-bold my-1 text-zinc-950 dark:text-sky-50'>
-                        <p>Take a look around!</p>
+                        <p>Please, take a look around!</p>
                     </div>
                 </div>
             </div>
