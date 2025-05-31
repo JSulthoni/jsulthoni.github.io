@@ -12,7 +12,7 @@ const projectArray = [
         desc: 'SVANE is a fast and responsive web application with > 90 SEO Score. SVANE use React for frontend library, Redux for state manager, and SCSS for styling.'
     },
     {
-        name: 'SVANE SERVER',
+        name: 'SVANE BACKEND',
         url: '',
         code: 'https://github.com/JSulthoni/SVANE-backend',
         image: SVANEBACKEND,
